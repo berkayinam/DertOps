@@ -8,6 +8,9 @@ services:
     environment:
       - FLASK_APP=app.py
       - FLASK_ENV=production
+      - SECRET_KEY=your-secret-key
+      - AUTH_SERVICE_URL=http://auth-service:8081
+      - USER_SERVICE_URL=http://user-service:8082
     depends_on:
       auth-service:
         condition: service_healthy
@@ -48,47 +51,6 @@ services:
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8082/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-
-  frontend-service:
-    build: ./frontend-service
-    container_name: frontend-service
-    ports:
-      - "7777:7777"
-    environment:
-      - SECRET_KEY=your-secret-key
-      - AUTH_SERVICE_URL=http://auth-service:8081
-      - USER_SERVICE_URL=http://user-service:8082
-    depends_on:
-      auth-service:
-        condition: service_healthy
-      user-service:
-        condition: service_healthy
-    networks:
-      - dertops-network
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:7777/login"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "8080:8080"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf
-    depends_on:
-      frontend-service:
-        condition: service_healthy
-    networks:
-      - dertops-network
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080"]
       interval: 30s
       timeout: 10s
       retries: 3
