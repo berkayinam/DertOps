@@ -1,0 +1,77 @@
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 0;
+    text-align: left;
+}
+
+.hero-section h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.about-section {
+    background-color: #f8f9fa;
+}
+
+.team-section .card {
+    transition: transform 0.3s;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-section .card:hover {
+    transform: translateY(-5px);
+}
+
+.team-section .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.contact-section .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section .form-control {
+    border-radius: 0;
+    border: 1px solid #ddd;
+}
+
+.contact-section .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0;
+}
+
+.contact-section .list-unstyled li {
+    padding: 10px 0;
+}
+
+.contact-section .list-unstyled i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+footer h5 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin-bottom: 0;
+} 
