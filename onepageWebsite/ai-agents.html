@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agents - DertOps</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .container-custom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="container-custom">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex-shrink-0 flex items-center">
+                        <img src="logo.png" alt="DertOps Logo" class="h-8 w-auto mr-2">
+                        <span class="text-3xl font-bold text-blue-600">DertOps</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="/bootcamp.html" class="text-gray-700 hover:text-blue-600 px-4 py-3 rounded-md text-base font-medium">DevOps Bootcamp</a>
+                    <a href="/ai-agents.html" class="text-blue-600 px-4 py-3 rounded-md text-base font-medium">AI Agents</a>
+                    <a href="/team.html" class="text-gray-700 hover:text-blue-600 px-4 py-3 rounded-md text-base font-medium">Takım</a>
+                    <a href="/contact.html" class="text-gray-700 hover:text-blue-600 px-4 py-3 rounded-md text-base font-medium">İletişim</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="pt-24 pb-16 bg-gradient-to-b from-blue-50 to-white">
+        <div class="container-custom">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                    AI Agents Forum
+                </h1>
+                <p class="mt-6 text-xl text-gray-600 leading-relaxed">
+                    Yapay zeka dünyasının en son gelişmelerini, DevOps ekosistemindeki AI uygulamalarını ve 
+                    otomasyon trendlerini yakından takip ediyoruz. Ekibimizle birlikte düzenli olarak yayınlar 
+                    açıyor, sektördeki yenilikleri inceliyor ve deneyimlerimizi paylaşıyoruz. 
+                    AI Agents'ların DevOps süreçlerine entegrasyonu, makine öğrenmesi uygulamaları ve 
+                    yapay zeka destekli otomasyon çözümleri hakkında detaylı tartışmalar yapıyoruz.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <section class="py-16">
+        <div class="container-custom">
+            <!-- Featured Post -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
+                <div class="p-8">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Öne Çıkan</span>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-4">DevOps'ta Yapay Zeka Kullanımı</h2>
+                    <p class="text-gray-600 mb-6">
+                        DevOps süreçlerinde yapay zeka ve makine öğrenmesi teknolojilerinin kullanımı ile ilgili detaylı bir inceleme.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="./berke.jpeg"  
+                                 alt="Adem Berke" 
+                                 class="w-10 h-10 rounded-full mr-3">
+                            <div>
+                                <p class="font-medium">Adem Berke Nargül</p>
+                                <p class="text-sm text-gray-500">2 saat önce</p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">
+                            Devamını Oku <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Posts -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Post 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">CI/CD Pipeline'larında AI Entegrasyonu</h3>
+                        <p class="text-gray-600 mb-4">
+                            CI/CD süreçlerinde yapay zeka kullanarak hata tespiti ve optimizasyon.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="./berkay.jpeg"
+                                     alt="Berkay İnam" 
+                                     class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-500">Berkay İnam</span>
+                            </div>
+                            <span class="text-sm text-gray-500">1 gün önce</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Kubernetes'te AI-Driven Scaling</h3>
+                        <p class="text-gray-600 mb-4">
+                            Yapay zeka destekli otomatik ölçeklendirme stratejileri ve uygulamaları.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="./berke.jpeg"  
+                                     alt="Adem Berke" 
+                                     class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-500">Adem Berke Nargül</span>
+                            </div>
+                            <span class="text-sm text-gray-500">2 gün önce</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">AI ile Log Analizi</h3>
+                        <p class="text-gray-600 mb-4">
+                            Yapay zeka kullanarak log analizi ve anomali tespiti.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="./berkay.jpeg"
+                                     alt="Berkay İnam" 
+                                     class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-500">Berkay İnam</span>
+                            </div>
+                            <span class="text-sm text-gray-500">3 gün önce</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 4 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">DevOps'ta AI Güvenliği</h3>
+                        <p class="text-gray-600 mb-4">
+                            Yapay zeka sistemlerinin güvenliği ve DevOps süreçlerine entegrasyonu.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="./berke.jpeg"  
+                                     alt="Adem Berke" 
+                                     class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-500">Adem Berke Nargül</span>
+                            </div>
+                            <span class="text-sm text-gray-500">4 gün önce</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container-custom">
+            <div class="text-center">
+                <p class="text-gray-400">&copy; 2024 DertOps. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
